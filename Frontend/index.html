@@ -1,12 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container-pokemons" id="container-pokemons"></div>
-    <script src="script.js"></script>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Pokedex</title>
+    </head>
+    <body>
+        <img src="img/pokemon.png" alt="logoPokemon" class="imgPokemon">
+        <input class="barraPesquisa" type="text" id="pesquisa" placeholder="Digite aqui">
+        <div class="container-pokemons" id="container-pokemons"></div>
+        <div id="modal-pokemon" class="modal">
+            <div class="modal-content">
+                <span class="fechar-modal">&times;</span>
+                <h2 id="pokemon-nome"></h2>
+                <img id="pokemon-imagem" src="" alt="">
+                <div id="pokemon-stats"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin-top: 10vh;
+    width: 160px;
+    height: 225px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+    max-width: 100px;
+    margin-bottom: 5px;
+}
+
+.imgPokemon {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.barraPesquisa {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 5vh;
+}
+
+.container-pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 50px;
+    margin-top: 20px;
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+.container-pokemons::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+}
+
+.container-pokemons::-webkit-scrollbar {
+    display: none;
+}
+
+.container-pokemons {
+    scrollbar-width: none;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.fechar-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
