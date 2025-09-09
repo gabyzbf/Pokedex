@@ -48,7 +48,9 @@ body {
 .barraPesquisa {
     display: block;
     margin: 0 auto;
-    width: 300px;
+    background-color: #ffffff;
+    height: 350px;
+    width: 400px;
     margin-top: 5vh;
 }
 
@@ -113,4 +115,43 @@ body {
     top: 10px;
     right: 20px;
     cursor: pointer;
+}
+
+#pokemon-stats p {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.stat-hp {
+    background-color: #ff8080;
+}
+
+.stat-attack {
+    background-color: #f08030;
+}
+
+.stat-defense {
+    background-color: #f8d030;
+}
+
+.stat-special-attack {
+    background-color: #6890f0;
+}
+
+.stat-special-defense {
+    background-color: #78c850;
+}
+
+.stat-speed {
+    background-color: #98d8d8;
 }

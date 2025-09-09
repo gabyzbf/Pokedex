@@ -36,14 +36,24 @@ const criarCards = (listaDePokemons) => {
             stats.innerHTML = '';
             pokemon.stats.forEach(stat => {
                 const statElement = document.createElement('p');
-                statElement.innerText = `${stat.stat.name}: ${stat.base_stat}`;
+                statElement.classList.add(`stat-${stat.stat.name}`);
+
+             
+                const statName = document.createElement('span');
+                statName.innerText = stat.stat.name;
+
+                
+                const statValue = document.createElement('span');
+                statValue.innerText = stat.base_stat;
+
+                statElement.appendChild(statName);
+                statElement.appendChild(statValue);
+
                 stats.appendChild(statElement);
             });
 
             modal.style.display = 'flex';
-
         });
-
     }
 }
 
@@ -69,11 +79,9 @@ barraPesquisa.addEventListener('keyup', () => {
 
     criarCards(listaFiltrada);
 });
+
 const fecharModal = document.querySelector('.fechar-modal');
-
-
 const modal = document.getElementById('modal-pokemon');
-
 
 fecharModal.addEventListener('click', () => {
     modal.style.display = 'none';
