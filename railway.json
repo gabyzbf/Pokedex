@@ -1,9 +1,11 @@
 {
     "build": {
-      "command": "cd Backend && npm install"
+      "context": "Backend",
+      "command": "npm install"
     },
     "start": {
-      "command": "cd Backend && npm start"
+      "context": "Backend",
+      "command": "npm start"
     }
   }
   
