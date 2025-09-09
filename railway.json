@@ -1,5 +1,11 @@
 {
-    "build": "cd Backend && npm install",
-    "start": "cd Backend && npm start"
+    "build": {
+      "builder": "sh",
+      "args": ["-c", "cd Backend && npm install"]
+    },
+    "start": {
+      "builder": "sh",
+      "args": ["-c", "cd Backend && npm start"]
+    }
   }
   
